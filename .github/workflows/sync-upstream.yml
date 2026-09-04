@@ -1,0 +1,42 @@
+name: Sync upstream
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Merge upstream/main
+        id: merge
+        run: |
+          git remote add upstream https://github.com/ExoAE/ScCompLangPack.git
+          git fetch upstream main
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git merge upstream/main --no-edit; then
+            echo "conflict=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "conflict=true" >> "$GITHUB_OUTPUT"
+            git add -A
+            git commit -m "Merge upstream/main (conflicts need manual resolution)"
+          fi
+
+      - name: Open PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sync/upstream
+          delete-branch: true
+          title: ${{ steps.merge.outputs.conflict == 'true' && '⚠️ Sync upstream (conflicts)' || 'Sync upstream' }}
+          body: ${{ steps.merge.outputs.conflict == 'true' && 'Upstream changes conflicted with local changes. Conflict markers are committed on this branch — resolve them here before merging.' || 'Clean merge of upstream/main. Review and merge.' }}
+          labels: ${{ steps.merge.outputs.conflict == 'true' && 'conflict' || '' }}
