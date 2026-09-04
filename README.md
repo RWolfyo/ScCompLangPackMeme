@@ -53,6 +53,14 @@ Download the latest version here:
 >ScCompLangPackRemix2
 >
 >`https://raw.githubusercontent.com/ExoAE/ScCompLangPack/refs/heads/main/ScCompLangPackRemix2/data/Localization/english/global.ini`
+>
+>ScCompLangPackMeme (this fork, with meme renames)
+>
+>`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/ScCompLangPack/data/Localization/english/global.ini`
+>
+>ScCompLangPackMeme Remix2 (this fork, with meme renames)
+>
+>`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/ScCompLangPackRemix2/data/Localization/english/global.ini`
 
 ---
 ## ⚙️ScCompLangPackRemix [here](https://github.com/BeltaKoda/ScCompLangPackRemix)
