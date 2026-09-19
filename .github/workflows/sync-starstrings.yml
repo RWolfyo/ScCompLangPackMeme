@@ -1,0 +1,28 @@
+name: Sync StarStrings
+
+on:
+  schedule:
+    - cron: "30 6 * * *" # daily 06:30 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pull StarStrings and apply meme overrides
+        run: bash merge-process/sync-starstrings.sh
+
+      - name: Open PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sync/starstrings
+          delete-branch: true
+          commit-message: Sync StarStrings from MrKraken/StarStrings
+          title: Sync StarStrings
+          body: New StarStrings update with meme overrides from `merge-process/modified_global_starstrings.ini` applied. Review and merge.

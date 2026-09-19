@@ -61,6 +61,14 @@ Download the latest version here:
 >ScCompLangPackMeme Remix2 (this fork, with meme renames)
 >
 >`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/ScCompLangPackRemix2/data/Localization/english/global.ini`
+>
+>SmartCitizen (this fork)
+>
+>`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/SmartCitizen/data/Localization/english/global.ini`
+>
+>StarStrings Meme (this fork, StarStrings with meme renames, auto-synced)
+>
+>`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/StarStrings/data/Localization/english/global.ini`
 
 ---
 ## ⚙️ScCompLangPackRemix [here](https://github.com/BeltaKoda/ScCompLangPackRemix)
