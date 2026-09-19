@@ -25,4 +25,4 @@ jobs:
           delete-branch: true
           commit-message: Sync StarStrings from MrKraken/StarStrings
           title: Sync StarStrings
-          body: New StarStrings update with meme overrides from `merge-process/modified_global_starstrings.ini` applied. Review and merge.
+          body: New StarStrings update with meme overrides from `merge-process/meme-overrides.ini` applied. Review and merge.

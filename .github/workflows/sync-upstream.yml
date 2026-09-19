@@ -32,6 +32,12 @@ jobs:
             git commit -m "Merge upstream/main (conflicts need manual resolution)"
           fi
 
+      - name: Reapply meme overrides
+        if: steps.merge.outputs.conflict == 'false'
+        run: |
+          bash merge-process/apply-overrides.sh
+          git commit -am "Reapply meme overrides" || true
+
       - name: Open PR
         uses: peter-evans/create-pull-request@v6
         with:
