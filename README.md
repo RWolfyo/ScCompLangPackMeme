@@ -1,5 +1,27 @@
 # ⚙️ Component Language Pack + additions [🚀4.10 OUT🚀]
 
+## 🤡 Meme packs (this fork)
+
+Same packs with meme renames like `Fentanyl [Feynmaline]`. Paste a link into the english language config of the [SC Launch Configurator](https://www.luftwerft.com/?lang=en), or download the file.
+
+**ScCompLangPack Meme**
+
+`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/ScCompLangPack/data/Localization/english/global.ini`
+
+**ScCompLangPackRemix2 Meme**
+
+`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/ScCompLangPackRemix2/data/Localization/english/global.ini`
+
+**StarStrings Meme (auto-synced from MrKraken)**
+
+`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/StarStrings/data/Localization/english/global.ini`
+
+**SmartCitizen (no meme renames)**
+
+`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/SmartCitizen/data/Localization/english/global.ini`
+
+---
+
 The default language pack modifies component names to make it easier to detect and track stats.
 
 Component changes:
@@ -53,22 +75,6 @@ Download the latest version here:
 >ScCompLangPackRemix2
 >
 >`https://raw.githubusercontent.com/ExoAE/ScCompLangPack/refs/heads/main/ScCompLangPackRemix2/data/Localization/english/global.ini`
->
->ScCompLangPackMeme (this fork, with meme renames)
->
->`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/ScCompLangPack/data/Localization/english/global.ini`
->
->ScCompLangPackMeme Remix2 (this fork, with meme renames)
->
->`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/ScCompLangPackRemix2/data/Localization/english/global.ini`
->
->SmartCitizen (this fork)
->
->`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/SmartCitizen/data/Localization/english/global.ini`
->
->StarStrings Meme (this fork, StarStrings with meme renames, auto-synced)
->
->`https://raw.githubusercontent.com/RWolfyo/ScCompLangPackMeme/refs/heads/main/StarStrings/data/Localization/english/global.ini`
 
 ---
 ## ⚙️ScCompLangPackRemix [here](https://github.com/BeltaKoda/ScCompLangPackRemix)
