@@ -1,4 +1,4 @@
-# ⚙️ Component Language Pack + additions [🚀4.10.2 OUT🚀]
+# ⚙️ Component Language Pack + additions [🚀4.10.3 OUT🚀]
 
 ## 🤡 Meme packs (this fork)
 
